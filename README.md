@@ -1,7 +1,6 @@
 # tick-rs
 [![Actions Status](https://github.com/tarkah/tickrs/workflows/Test/badge.svg)](https://github.com/tarkah/tickrs/actions)
 
-Realtime ticker data in your terminal 📈 Built with Rust. Data sourced from Yahoo! Finance.
 终端中的实时股票行情数据收录器📈，使用Rust构建。数据来自Yahoo!金融。
 
   - [Installation](#installation)
@@ -11,7 +10,7 @@ Realtime ticker data in your terminal 📈 Built with Rust. Data sourced from Ya
 
 <img src="./assets/demo.gif">
 
-## 1.Installation
+## 1.安装
 
 ### Binary
 
@@ -29,7 +28,7 @@ cargo install tickrs
 yay -S tickrs-git
 ```
 
-## 2.Usage
+## 2.使用
 
 ```
 tickrs
