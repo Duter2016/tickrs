@@ -11,7 +11,7 @@ Realtime ticker data in your terminal 📈 Built with Rust. Data sourced from Ya
 
 <img src="./assets/demo.gif">
 
-## Installation
+## 1.Installation
 
 ### Binary
 
@@ -29,7 +29,7 @@ cargo install tickrs
 yay -S tickrs-git
 ```
 
-## Usage
+## 2.Usage
 
 ```
 tickrs
@@ -55,7 +55,7 @@ OPTIONS:
     -i, --update-interval <update-interval>    从API更新数据的时间间隔（秒） [默认值: 1]
 ```
 
-## Yahoo hosts
+## 3.Yahoo hosts
 
 ```
 #Yahoo Start
@@ -90,7 +90,7 @@ OPTIONS:
 152.195.55.192 consent.cmp.oath.com
 #Yahoo End
 ```
-## Stickrs.desktop
+## 4.Stickrs.desktop
 
 下载Linux版本，解压至某个目录，然后建一个启动快捷方式。
 
@@ -103,6 +103,13 @@ Terminal=true
 Comment=Yahoo股票图形看盘
 Icon=~/opt/tickrs/tickrs.jpeg
 ```
+
+## 5.代码示例
+
+> 上证  600XXX.ss
+> 深证  200XXX.sz
+> 创业板 300XXX.sz
+> 上证指数 000001.SS ， 深证指数 399001.SZ， 创业板指数 399006.SZ
 
 ### Windows
 
