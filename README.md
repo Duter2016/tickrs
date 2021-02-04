@@ -55,6 +55,42 @@ OPTIONS:
     -i, --update-interval <update-interval>    Interval to update data from API (seconds) [default: 1]
 ```
 
+## Yahoo hosts
+
+```
+#Yahoo Start
+98.137.11.163 yahoo.com
+98.137.11.163 www.yahoo.com
+87.248.118.22 finance.yahoo.com
+87.248.118.22 bats.video.yahoo.com
+87.248.118.22 yep.video.yahoo.com
+87.248.118.22 assets.video.yahoo.net
+180.222.102.158 geo.yahoo.com
+69.147.88.8 query1.finance.yahoo.com
+69.147.88.7 query2.finance.yahoo.com
+98.137.11.144 sp.analytics.yahoo.com
+54.202.68.156 streamer.finance.yahoo.com
+98.136.103.27 udc.yahoo.com
+69.147.88.7 video-api.yql.yahoo.com
+87.248.118.22 yimg.com
+87.248.118.22 s.yimg.com
+212.102.50.49 cdn.rawgit.com
+106.10.248.150 secure.yahoo.com
+69.147.88.9 edge-mcdn.secure.yahoo.com
+87.248.118.24 edge-mcdn-beacon.secure.yahoo.com
+69.147.88.7 dns-w6wicpayn.sombrero.yahoo.net
+152.195.38.41 edgecast-vod.yahoo.net
+77.238.180.76 mcdn-report.wc.yahoodns.net
+68.180.134.137 r-a508bfnpsnreport.wc.yahoodns.net
+87.248.106.201 r-bfr1k8pnbgreport.wc.yahoodns.net
+87.248.107.200 r-c1auiw5wbjreport.wc.yahoodns.net
+87.248.106.201 v-a508bfnpsn.wc.yahoodns.net
+119.161.10.88 v-bfr1k8pnbg.wc.yahoodns.net
+209.73.179.126 v-c1auiw5wbj.wc.yahoodns.net
+152.195.55.192 consent.cmp.oath.com
+#Yahoo End
+```
+
 ### Windows
 
 Use [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701) to properly display this app.
