@@ -2,6 +2,7 @@
 [![Actions Status](https://github.com/tarkah/tickrs/workflows/Test/badge.svg)](https://github.com/tarkah/tickrs/actions)
 
 Realtime ticker data in your terminal 📈 Built with Rust. Data sourced from Yahoo! Finance.
+终端中的实时股票行情数据收录器📈，使用Rust构建。数据来自Yahoo!金融。
 
   - [Installation](#installation)
   - [Usage](#usage)
@@ -32,27 +33,26 @@ yay -S tickrs-git
 
 ```
 tickrs
-Realtime ticker data in your terminal 📈
+终端中的实时股票行情数据收录器 📈
 
 USAGE:
     tickrs [FLAGS] [OPTIONS]
 
 FLAGS:
-    -p, --enable-pre-post    Enable pre / post market hours for graphs
-    -h, --help               Prints help information
-        --hide-help          Hide help icon in top right
-        --hide-prev-close    Hide previous close line on 1D chart
-        --hide-toggle        Hide toggle block
-    -x, --show-x-labels      Show x-axis labels
-        --summary            Start in summary mode
-        --trunc-pre          Truncate pre market graphing to only 30 minutes prior to markets opening
-    -V, --version            Prints version information
+    -p, --enable-pre-post    启用图表的交易前/交易后时间（pre/post market hours）
+    -h, --help               打印帮助信息
+        --hide-help          在右上角隐藏帮助图标
+        --hide-prev-close    在一维图形上隐藏之前的收盘价
+        --hide-toggle        隐藏切换块
+    -x, --show-x-labels      显示 x 轴标签
+        --summary            以摘要模式启动
+        --trunc-pre          将开盘前图表截断至开市前仅30分钟
+    -V, --version            打印版本信息
 
 OPTIONS:
-    -s, --symbols <symbols>...                 Comma separated list of ticker symbols to start app with
-    -t, --time-frame <time-frame>              Use specified time frame when starting program and when new stocks are
-                                               added [default: 1D]  [possible values: 1D, 1W, 1M, 3M, 6M, 1Y, 5Y]
-    -i, --update-interval <update-interval>    Interval to update data from API (seconds) [default: 1]
+    -s, --symbols <symbols>...                 逗号分隔的股票代码符号列表，用于启动应用
+    -t, --time-frame <time-frame>              使用指定的时间框架时，启动程序和当新股票[默认值: 1D]  [可选值: 1D, 1W, 1M, 3M, 6M, 1Y, 5Y]
+    -i, --update-interval <update-interval>    从API更新数据的时间间隔（秒） [默认值: 1]
 ```
 
 ## Yahoo hosts
@@ -62,6 +62,7 @@ OPTIONS:
 98.137.11.163 yahoo.com
 98.137.11.163 www.yahoo.com
 87.248.118.22 finance.yahoo.com
+87.248.118.22 streamer.finance.yahoo.com
 87.248.118.22 bats.video.yahoo.com
 87.248.118.22 yep.video.yahoo.com
 87.248.118.22 assets.video.yahoo.net
@@ -69,7 +70,6 @@ OPTIONS:
 69.147.88.8 query1.finance.yahoo.com
 69.147.88.7 query2.finance.yahoo.com
 98.137.11.144 sp.analytics.yahoo.com
-54.202.68.156 streamer.finance.yahoo.com
 98.136.103.27 udc.yahoo.com
 69.147.88.7 video-api.yql.yahoo.com
 87.248.118.22 yimg.com
@@ -89,6 +89,19 @@ OPTIONS:
 209.73.179.126 v-c1auiw5wbj.wc.yahoodns.net
 152.195.55.192 consent.cmp.oath.com
 #Yahoo End
+```
+## Stickrs.desktop
+
+下载Linux版本，解压至某个目录，然后建一个启动快捷方式。
+
+```
+[Desktop Entry]
+Name=tickrs
+Exec=~/opt/tickrs/tickrs 
+Type=Application
+Terminal=true
+Comment=Yahoo股票图形看盘
+Icon=~/opt/tickrs/tickrs.jpeg
 ```
 
 ### Windows
